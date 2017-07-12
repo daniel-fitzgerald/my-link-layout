@@ -6,8 +6,6 @@ import Footer from './Footer'
 
 import './style.css'
 
-import '../pancake/css/pancake.min.css'
-
 export default function MyLinkLayout({ routes, children, user = { username: 'anonymous' }, navItems }) {
     return <div>
         <Header username={user.username} />

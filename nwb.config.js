@@ -7,9 +7,9 @@ module.exports = {
       externals: {
         'react': 'React',
         'react-router': 'ReactRouter',
+        "@gov.au/core": "Core",
         "@gov.au/body": "Body",
         "@gov.au/breadcrumbs": "Breadcrumbs",
-        "@gov.au/core": "Core",
         "@gov.au/pancake-js": "pancake",
         "@gov.au/pancake-sass": "pancake-sass",
       }

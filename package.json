@@ -1,6 +1,6 @@
 {
-  "name": "@react-ag-components/my-link-layout",
-  "version": "0.0.1",
+  "name": "@ag-components-react/my-link-layout",
+  "version": "0.0.4",
   "description": "my-link-layout React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,11 +19,6 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "@gov.au/body": "^0.1.1",
-    "@gov.au/breadcrumbs": "^0.2.0",
-    "@gov.au/core": "^0.1.2",
-    "@gov.au/pancake-js": "^1.0.9",
-    "@gov.au/pancake-sass": "^1.1.1",
     "react-router": "^3.0.0"
   },
   "peerDependencies": {
@@ -39,7 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alphillips/repo-name.git"
+    "url": "https://github.com/daniel-fitzgerald/my-link-layout.git"
   },
   "keywords": [
     "react-component"
