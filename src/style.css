@@ -1,0 +1,15 @@
+.main-wrapper {
+  padding: 15px 0 1px;
+  background: #d7d7d7 url("http://mylink.agdaff.gov.au/Style%20Library/Mylink2016/css/images/body-bg.jpg") no-repeat 0 100%; }
+
+body {
+  background-color: #343434; 
+  margin: 0;}
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+#root {
+  background: #fff;
+}

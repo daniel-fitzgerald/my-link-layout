@@ -1,0 +1,42 @@
+footer {
+  height: 39px;
+  overflow: hidden;
+  font-family: Calibri, arial, sans-serif; }
+
+footer .footer a:hover, footer .footer a:focus {
+  background-color: #343434;
+  border-color: transparent; }
+
+footer .footer-wrapper {
+  padding: 10px 15px;
+  background: #343434;
+  min-height: 30px; }
+
+footer .footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #ffffff; }
+
+footer .footer p {
+  margin: 0;
+  padding: 0; }
+
+footer .footer .depart-name {
+  float: left;
+  color: #ffffff; }
+
+footer .footer .depart-url {
+  float: right; }
+
+footer .footer .depart-url a {
+  text-decoration: underline;
+  color: #ffffff; }
+
+footer .footer a {
+  border-bottom: none; }
+
+.clearfix {
+  clear: both; }
+
+footer {
+  width: 100%; }

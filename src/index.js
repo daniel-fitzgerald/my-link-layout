@@ -1,9 +1,5 @@
-import React, {Component} from 'react'
+//import MyLinkLayout from './MyLinkLayout'
+//import Content from './Conent'
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export {default as MyLinkLayout} from './MyLinkLayout'
+export {default as Content} from './Content'

@@ -1,15 +1,35 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
-import Example from '../../src'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
-class Demo extends Component {
-  render() {
-    return <div>
-      <h1>my-link-layout Demo</h1>
-      <Example/>
-    </div>
-  }
+import { MyLinkLayout, Content } from '../../src'
+
+const navItems = [
+  { label: 'Portal 1', path: '/portal1' },
+  { label: 'Portal 2', path: '/portal2' },
+]
+
+const AppLayout = (user) => (props) => <MyLinkLayout {...props} navItems={navItems} user={user} />
+
+function Home1({ }) {
+  return <Content title="Home">home!</Content>
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+function Portal1({ }) {
+  return <Content title="Portal 1">portal 1!</Content>
+}
+
+function Portal2({ }) {
+  return <Content title="Portal 2">portal 2!</Content>
+}
+
+render(<div id="root" className="uikit-body">
+  <Router history={hashHistory}>
+    <Route path="/" component={AppLayout({ username: 'smith, joe' })}>
+      <IndexRoute component={Home1} />
+      <Route path="/portal1" component={Portal1} />
+      <Route path="/portal2" component={Portal2} />
+    </Route>
+  </Router>
+</div>, document.querySelector('#demo'))
