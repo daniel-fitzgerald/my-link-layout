@@ -5,6 +5,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
 import { MyLinkLayout, Content } from '../../src'
 
+import '../../pancake/css/pancake.min.css'
+
 const navItems = [
   { label: 'Portal 1', path: '/portal1' },
   { label: 'Portal 2', path: '/portal2' },
@@ -13,11 +15,11 @@ const navItems = [
 const AppLayout = (user) => (props) => <MyLinkLayout {...props} navItems={navItems} user={user} />
 
 function Home1({ }) {
-  return <Content title="Home">home!</Content>
+  return <Content title="Home" messages={[{ text: 'hi', type: "info" }]}>home!</Content>
 }
 
 function Portal1({ }) {
-  return <Content title="Portal 1">portal 1!</Content>
+  return <Content title="Portal 1" messages={{ text: 'i error', type: "error" }}>portal 1!</Content>
 }
 
 function Portal2({ }) {

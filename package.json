@@ -1,6 +1,6 @@
 {
   "name": "@ag-components-react/my-link-layout",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "my-link-layout React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -25,6 +25,8 @@
     "react": "15.x"
   },
   "devDependencies": {
+    "@gov.au/page-alerts": "^0.2.0",
+    "@gov.au/pancake-sass": "^1.1.1",
     "nwb": "0.18.x",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"

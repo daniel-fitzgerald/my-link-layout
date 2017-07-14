@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Link } from 'react-router'
 
+import Messages from '../Messages'
+
 import './content.css'
 
 function Title({ title }) {
@@ -32,12 +34,12 @@ function Breadcrumbs({ breadcrumbs }) {
     }
 }
 
-function Content({ children, breadcrumbs, title, message }) {
+function Content({ children, breadcrumbs, title, messages }) {
     return <div>
         <Breadcrumbs breadcrumbs={breadcrumbs} />
         <div className="main">
             <Title title={title} />
-            {message}
+            <Messages messages={messages} />
             {children}
         </div>
     </div>
