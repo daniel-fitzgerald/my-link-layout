@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 import './header.css'
 
-function Header({ username }) {
+function Header({ username, title }) {
   return <header className="header">
     <div className="top-links-wrapper">
       <div className="top-links">
@@ -15,7 +15,7 @@ function Header({ username }) {
       </div>
     </div>
     <div className="logo">
-      <h1>Nexdoc admin</h1>
+      <h1>{title}</h1>
     </div>
   </header>
 }
