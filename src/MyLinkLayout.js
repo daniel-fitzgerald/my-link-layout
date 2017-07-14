@@ -6,9 +6,9 @@ import Footer from './Footer'
 
 import './style.css'
 
-export default function MyLinkLayout({ routes, children, user = { username: 'anonymous' }, navItems }) {
+export default function MyLinkLayout({ routes, children, user = { username: 'anonymous' }, navItems, title }) {
     return <div>
-        <Header username={user.username} />
+        <Header username={user.username} title={title} />
         <Nav navItems={navItems} routes={routes} />
         <div className="main-wrapper">
             <div className="main-block">
