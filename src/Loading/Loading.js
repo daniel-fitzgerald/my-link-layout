@@ -6,11 +6,18 @@ import Messages from '../Messages'
 
 import './loading.css'
 
+function Content({ messages }) {
+    if (messages) {
+        return <p>Loading...</p>
+    } else {
+        return <Messages messages={messages} />
+    }
+}
+
 function Loading({ children, messages }) {
     return <div>
         <div className="main">
-            <Messages messages={messages} />
-            <p>Loading...</p>
+            <Content messages={messages} />
             {children}
         </div>
     </div>
