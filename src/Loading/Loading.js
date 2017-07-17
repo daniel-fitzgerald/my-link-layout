@@ -8,9 +8,9 @@ import './loading.css'
 
 function Content({ messages }) {
     if (messages) {
-        return <p>Loading...</p>
-    } else {
         return <Messages messages={messages} />
+    } else {
+        return <p>Loading...</p>
     }
 }
 
