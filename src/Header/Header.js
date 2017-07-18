@@ -5,7 +5,6 @@ import { Link } from 'react-router'
 import './header.css'
 
 function Header({ username, title }) {
-  document.title = 'Nexdoc Admin | ' + title
   return <header className="header">
     <div className="top-links-wrapper">
       <div className="top-links">
